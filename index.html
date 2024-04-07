@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Social Media User List - Home</title>
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-md">
+      <a class="navbar-brand" href="./index.html">Social Media User List</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link current" aria-current="page" href="./index.html">&nbspHome&nbsp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./friends.html">&nbspFriends&nbsp</a>
+          </li>
+        </ul>
+        <!-- 搜尋 -->
+        <form class="d-flex" id="search-form" role="search">
+          <input class="form-control me-2" type="search" id="search-input" placeholder="Search User" aria-label="Search User">
+          <button class="btn btn-outline-success " type="submit" id="search-submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主畫面 -->
+  <div class="container mt-5">
+    <!-- 選擇每頁顯示數量 -->
+    <div class="dropdown" id="users-per-page">
+      <span class="content-word">每頁顯示：</span>
+      <button class="btn btn-outline-secondary dropdown-toggle user-amount-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        10人
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item user-amount active" href="#" data-amount="10">10人</a></li>
+        <li><a class="dropdown-item user-amount" href="#" data-amount="25">25人</a></li>
+        <li><a class="dropdown-item user-amount" href="#" data-amount="50">50人</a></li>
+        <li><a class="dropdown-item user-amount" href="#" data-amount="75">75人</a></li>
+        <li><a class="dropdown-item user-amount" href="#" data-amount="100">100人</a></li>
+      </ul>
+    </div>
+    <div class="row d-flex" id="data-panel">
+      <!-- Render User List by JS-->
+    </div>
+
+    
+  </div>
+
+  <!-- 分頁選擇 Paginator -->
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center" id="paginator">
+      <!-- Render Paginator by JS -->
+    </ul>
+  </nav>
+
+  <!-- User Modal -->
+  <div class="modal fade" tabindex="-1" id="user-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #b1b479; color: white;">
+          <h5 class="modal-title" id="user-modal-title">User Name</h5>
+          <a href="mailto:tudor-pogor@example.com" class="email-link" id="user-modal-email"><i
+              class="fa-regular fa-paper-plane" title="Send Email"></i></a>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="user-modal-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="User Avatar"
+                class="img-fluid" id="user-modal-image">
+            </div>
+            <div class="col-sm-6">
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action" id="user-modal-birthday" aria-disabled="true">Birthday:
+                </a>
+                <a class="list-group-item list-group-item-action" id="user-modal-age" aria-disabled="true">Age: </a>
+                <a class="list-group-item list-group-item-action" id="user-modal-gender" aria-disabled="true">Gender:</a>
+                <a class="list-group-item list-group-item-action" id="user-modal-region" aria-disabled="true">From:
+                </a>
+                <a></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary button-add-friend modal-friend">Add
+            friend</button>
+          <button type="button" class="btn btn-outline-secondary button-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/cd0d71ee55.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>

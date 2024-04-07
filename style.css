@@ -1,0 +1,287 @@
+body {
+  background-color: #fdfdfd;
+}
+
+
+/* navbar */
+.navbar {
+  background-color: #b6ab71;
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar-brand {
+  color: #61670d;
+}
+
+.navbar-brand:hover {
+  color: #dadda8;
+}
+
+.nav-link {
+  color: #838747;
+}
+
+.nav-link:hover {
+  color: #dadda8;
+}
+
+.current {
+  color: #61670d;
+}
+
+#search-submit {
+  border-color: #61670d;
+  color: #61670d;
+  --bs-btn-active-bg: #c4c69f;
+  --bs-btn-active-border-color: #c4c69f;
+}
+
+#search-submit:hover {
+  border-color: #777b3b;
+  background-color: #777b3b;
+  color: #fcfaf5;
+}
+
+
+/* Amount Chooser */
+#users-per-page {
+  text-align: end;
+  margin: auto 5rem 1rem auto;
+}
+
+.content-word {
+  color: #6e552f;
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 5rem;
+}
+
+
+/* data-panel */
+#data-panel {
+  margin: auto 5rem;
+}
+
+
+/* card */
+.card {
+  margin: 7px;
+  padding: 0px;
+  border-style: hidden;
+  background-color: #fafcf1;
+}
+
+.card:hover {
+  background-color: #f6ffcd;
+}
+
+.card-header {
+  text-align: end;
+  padding: 0px;
+  border-style: hidden;
+}
+
+.card-title {
+  text-align: center;
+  color: #6e552f;
+}
+
+.card-show-user {
+  cursor: pointer;
+}
+
+.card-footer {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  border-style: hidden;
+};
+
+
+/* modal */
+.modal-header {
+  background-color: #b1b479;
+  color: #b1b479;
+  border-color: #b1b479;
+}
+
+.email-link {
+  color: #dae2ba;
+  margin-left: 13px;
+}
+
+.email-link:hover {
+  color: #6e552f;
+}
+
+.modal-footer {
+  background-color: #ccd5b1;
+  border-color: #ccd5b1;
+}
+
+.modal-body {
+  background-color: #dae2ba;
+}
+
+.list-group-item {
+  background-color: #dae2ba;
+  border-color: #b1b479;
+  color: #6e552f;
+  cursor: default;
+}
+
+.list-group-item:hover {
+  background-color: #ccd5b1;
+  color: #a88249;
+}
+
+.modal-content {
+  border-color: #91ad70;
+}
+
+.button-close {
+  border-color: #6e552f;
+  color: #6e552f;
+}
+
+.button-close:hover {
+  background-color: #6e552f;
+  border-color: #6e552f;
+}
+
+.button-add-friend, 
+.button-remove-friend, 
+.panel-remove-friend {
+  border-color: #dd8689;
+  color: #dd8689;
+}
+
+.button-add-friend:hover,
+.button-remove-friend:hover, 
+.panel-remove-friend:hover {
+  background-color: #dfa1a4;
+  border-color: #dfa1a4;
+  color: white;
+}
+
+.button-add-friend:active,
+.button-remove-friend:active,
+.panel-remove-friend:active {
+  background-color: transparent !important;
+  border-color: #dd8689 !important;
+  color: #dd8689 !important;
+}
+
+.button-remove-friend,
+.panel-remove-friend {
+  border-color: #706c6c;
+  color: #706c6c;
+}
+
+.button-remove-friend:hover,
+.panel-remove-friend:hover {
+  background-color: #706c6c;
+  border-color: #706c6c;
+  color: whitesmoke;
+}
+
+.button-remove-friend:active,
+.panel-remove-friend:active {
+  background-color: transparent !important;
+  border-color: #706c6c !important;
+  color: #706c6c !important;
+}
+
+
+/* paginator */
+.pagination {
+  margin: 3rem 0 3rem 0;
+  --bs-pagination-active-bg: #61670d;
+  --bs-pagination-active-border-color: #899200;
+}
+
+.page-link {
+  color: #61670d;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  color: #899200;
+  background-color: #fafcf1;
+}
+
+.page-amount.btn {
+  padding: 9px 3px;
+  margin: auto 5px;
+  border-style: hidden;
+  color: #61670d;
+  cursor: default;
+}
+
+.page-item-arrow.btn {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  border-color: #e4e4e4;
+  color: #61670d;
+  padding: 13px;
+}
+
+.page-btn {
+  padding: 9px 6px 9px 15px;
+  margin: auto 5px;
+  border-color: #e4e4e4;
+  background-color: transparent;
+  color: #61670d;
+  --bs-btn-active-bg: #777b3b;
+  --bs-btn-active-border-color: #777b3b;
+}
+
+.page-btn.show {
+  border-color: #777b3b;
+  background-color: #777b3b;
+}
+
+.dropdown-toggle {
+  border-color: #777b3b;
+  color: #777b3b;
+}
+
+.page-item-arrow.btn:hover {
+  border-color: #bebebe;
+  background-color: #f6f6f6;
+  color: #899200 !important;
+}
+
+.dropdown-toggle.show, 
+.dropdown-toggle:hover {
+  color: #ffffff;
+  border-color: #777b3b;
+  background-color: #777b3b;
+  --bs-btn-active-bg: #9fa27b;
+  --bs-btn-active-border-color: #9fa27b;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-item {
+  color: #61670d;
+}
+
+.dropdown-item:hover {
+  background-color: #fefff0;
+  color: #b3ba45;
+}
+
+.dropdown-item.active {
+  background-color: #777b3b;
+  color: #ffffff;
+}
